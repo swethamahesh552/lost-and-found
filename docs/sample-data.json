@@ -1,0 +1,22 @@
+{
+    "lost_item":{
+        "type":"lost",
+        "title":"Blue water battle",
+        "category":"bottle",
+        "location":"Block C",
+        "event_date":"2026-09-22"
+    },
+    "found_item":{
+        "type":"found",
+        "title":"Black wallet",
+        "category":"wallet",
+        "location":"libratry",
+        "event_date":"2026-09-25"
+
+    },
+    "claim":{
+        "item_id":42,
+        "answer":"Library card is inside the front pocket",
+        "status":"pending"
+    }
+}
