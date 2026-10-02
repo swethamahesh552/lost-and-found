@@ -52,4 +52,4 @@ console.log("Found items:", getFoundItems());
 console.log("Item with id 2:", getItemById(2));
 console.log("All titles:", getAllTitles());
 console.log("Items at Block C:", getItemsByLocation("Block C"));
-console.log("Found bottles:", getFoundItemsByCategory("bottle"));
+console.log("Found bottles:", getFoundItemsByCategory("bottle"));P
