@@ -1,0 +1,28 @@
+{
+  "name": "lost-and-found",
+  "version": "1.0.0",
+  "description": "",
+  "main": "matching.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swethamahesh552/lost-and-found.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/swethamahesh552/lost-and-found/issues"
+  },
+  "homepage": "https://github.com/swethamahesh552/lost-and-found#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
+    "dotenv": "^18.0.5"
+  }
+}
