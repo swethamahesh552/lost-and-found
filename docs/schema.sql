@@ -1,5 +1,5 @@
 CREATE TABLE profiles (
-  id SERIAL PRIMARY KEY,
+  id UUID PRIMARY KEY REFERENCES auth.users(id),
   full_name TEXT NOT NULL,
   department TEXT,
   role TEXT NOT NULL DEFAULT 'student'
@@ -7,7 +7,7 @@ CREATE TABLE profiles (
 
 CREATE TABLE items (
   id SERIAL PRIMARY KEY,
-  user_id INT REFERENCES profiles(id),
+  user_id UUID REFERENCES profiles(id),
   type TEXT NOT NULL CHECK (type IN ('lost', 'found')),
   title TEXT NOT NULL,
   category TEXT NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE items (
 CREATE TABLE claims (
   id SERIAL PRIMARY KEY,
   item_id INT REFERENCES items(id),
-  claimant_id INT REFERENCES profiles(id),
+  claimant_id UUID REFERENCES profiles(id),
   answer TEXT NOT NULL,
   status TEXT NOT NULL DEFAULT 'pending',
   created_at TIMESTAMP DEFAULT NOW()
